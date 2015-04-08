@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="/favicon.png" type="image/png">
   <title>diffsky</title>
   <meta name="description" content="diffsky">
   <style>
@@ -11,37 +11,133 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
   body {
     font-family:"HelveticaNeue",Helvetica,Verdana,sans-serif;
-    color:#000;
+    color:#444;
     background-color:#F0EEEB;
   }
-  div {
-    position:absolute;
-    bottom:25%;right:15%;
-    color:#444;
+
+  div.diffsky {
+    margin:25px;
   }
+
   h1 {
     font-size:5.4em;
     margin:0;
-    float:right;
     letter-spacing:2px;
   }
+
   ul {
-    margin:0 0 0 -1.5em;
+    margin:-.5em 0 0 -1.5em;
     list-style-type: none;
     font-size:1.25em;
   }
+
   li {
     display: inline;
     padding-right: 10px;
   }
+
   a {
     text-decoration:none;
     color:#444;
     cursor:pointer;
   }
+
+  dl {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+  }
+
+  dl a {
+    display: inline-block;
+  }
+
+  @media (max-width: 480px) {
+    dl {
+      position: relative;
+      margin-top: 50px;
+      width: 250px;
+    }
+  }
+
+  dt {
+    min-height: 48px;
+    padding-left: 48px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    width: 250px;
+    background-size: 36px 36px !important;
+    background-repeat: no-repeat !important;
+    background-position: 0px 0px;
+  }
+
+  dt.bolt {
+    background: url('https://raw.githubusercontent.com/diffsky/bolt/master/assets/bolt-64.png');
+  }
+
+  dt.spook {
+    background: url('https://raw.githubusercontent.com/creativelive/spook/master/assets/spook-64.png');
+  }
+
+  dt.dockit {
+    background: url('https://raw.githubusercontent.com/diffsky/dockit/master/assets/dockit-64.png');
+  }
+
+  dt.lots {
+    background: url('https://raw.githubusercontent.com/diffsky/lots/master/assets/lots-64.png');
+  }
+
+  dt.chrome-dotfiles {
+    background: url('https://raw.githubusercontent.com/diffsky/chromedotfiles/master/icon-64.png');
+  }
+
+  dt.tabalot {
+    background: url('https://raw.githubusercontent.com/diffsky/tabalot/master/assets/tabalot-alpha-64.png');
+  }
+
+  dt.appear {
+    background: url('https://raw.githubusercontent.com/creativelive/appear/master/assets/appear-64.png');
+  }
+
+  dd {
+    margin-top: -25px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    font-size: 0.8em;
+    width: 250px;
+  }
+
   @media screen and (device-aspect-ratio: 2/3), screen and (device-aspect-ratio: 40/71) {
     body {
-      font-size: 2.1em;
+      font-size: 3.1em;
+    }
+    ul {
+        margin: -30px 0 0 0;
+    }
+
+    dl {
+        position: relative;
+        margin-top: 50px;
+        width: 500px;
+    }
+    div.diffsky {
+        margin: 20px 50px 100px 50px;
+    }
+
+    dt {
+        font-size: 1.1em;
+        min-height: 128px;
+        padding-left: 128px;
+        padding-top: 10px;
+        background-size: 96px 96px !important;
+        background-position: 10px 20px !important;
+        width: 800px;
+    }
+    dd {
+        width: 800px;
+        margin-top: -60px;
+        padding-left: 85px;
+        margin-left: 45px
     }
   }
 </style>
@@ -55,13 +151,43 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 </script>
 </head>
 <body>
-  <div>
-  <h1>diffsky</h1>
-  <ul>
-    <li><a href="https://github.com/diffsky">github</a></li>
-    <li><a href="http://diffsky.github.com/resume/">resume</a></li>
-    <li><a href="https://twitter.com/diff_sky">twitter</a></li>
-  </ul>
+  <div class="diffsky">
+    <h1>diffsky</h1>
+    <ul>
+      <li><a href="https://github.com/diffsky">github</a></li>
+      <li><a href="http://diffsky.github.com/resume/">resume</a></li>
+      <li><a href="https://twitter.com/diff_sky">twitter</a></li>
+    </ul>
   </div>
+  <dl>
+    <a href="https://github.com/creativelive/spook">
+      <dt class="spook">spook</dt>
+      <dd>functional test harness for casperjs</dd>
+    </a>
+    <a href="https://github.com/creativelive/appear">
+      <dt class="appear">appear</dt>
+      <dd>do things when dom elements appear</dd>
+    </a>
+    <a href="http://littleopenticketsystem.info/">
+      <dt class="lots">LOTS</dt>
+      <dd>a simple code issue tool</dd>
+    </a>
+    <a href="https://github.com/diffsky/dockit">
+      <dt class="dockit">dockit</dt>
+      <dd>Literate documentation generator</dd>
+    </a>
+    <a href="https://github.com/diffsky/chromedotfiles">
+      <dt class="chrome-dotfiles">chrome dotfiles</dt>
+      <dd>a dotjs alternative</dd>
+    </a>
+    <a href="https://github.com/diffsky/tabalot">
+      <dt class="tabalot">tabalot</dt>
+      <dd>limit open chrome tabs</dd>
+    </a>
+    <a href="https://github.com/diffsky/bolt">
+      <dt class="bolt">bolt</dt>
+      <dd>bash based config management</dd>
+    </a>
+  </dl>
 </body>
 </html>
