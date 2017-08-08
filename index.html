@@ -75,14 +75,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     background: url('https://raw.githubusercontent.com/diffsky/bolt/master/assets/bolt-64.png');
   }
 
-  dt.spook {
-    background: url('https://raw.githubusercontent.com/creativelive/spook/master/assets/spook-64.png');
-  }
-
-  dt.dockit {
-    background: url('https://raw.githubusercontent.com/diffsky/dockit/master/assets/dockit-64.png');
-  }
-
   dt.lots {
     background: url('https://raw.githubusercontent.com/diffsky/lots/master/assets/lots-64.png');
   }
@@ -95,10 +87,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     background: url('https://raw.githubusercontent.com/diffsky/tabalot/master/assets/tabalot-alpha-64.png');
   }
 
-  dt.appear {
-    background: url('https://raw.githubusercontent.com/creativelive/appear/master/assets/appear-64.png');
-  }
-
   dd {
     margin-top: -25px;
     margin-bottom: 15px;
@@ -107,7 +95,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     width: 250px;
   }
 
-  @media screen and (device-aspect-ratio: 2/3), screen and (device-aspect-ratio: 40/71) {
+  @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
     body {
       font-size: 3.1em;
     }
@@ -115,11 +103,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
         margin: -30px 0 0 0;
     }
 
-    dl {
-        position: relative;
-        margin-top: 50px;
-        width: 500px;
-    }
     div.diffsky {
         margin: 20px 50px 100px 50px;
     }
