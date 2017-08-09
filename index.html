@@ -95,7 +95,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     width: 250px;
   }
 
-  @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  @media only screen and (max-width: 480px) and (orientation:portrait), only screen and (max-device-width: 480px) and (orientation:portrait) {
     body {
       font-size: 3.1em;
     }
@@ -121,12 +121,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
         margin-top: -60px;
         padding-left: 85px;
         margin-left: 45px
-    }
-  }
-
-  @media all and (orientation:landscape) {
-      body {
-        font-size: 1.2em;
     }
   }
 </style>
