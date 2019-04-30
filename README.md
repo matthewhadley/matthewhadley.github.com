@@ -1,1 +1,1 @@
-content for matthewhadley.com and matthewhadley.github.com
+content for matthewhadley.info and matthewhadley.github.com
